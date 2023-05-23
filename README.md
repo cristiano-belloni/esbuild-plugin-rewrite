@@ -6,7 +6,7 @@ This plugin rewrites external dependencies.
 
 ## Example
 
-Rewrite all imports to esm.sh:
+Rewrite all imports to esm.sh and serve:
 
 ```ts
 import esbuild from "esbuild";
