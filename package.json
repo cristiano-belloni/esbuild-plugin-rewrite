@@ -1,0 +1,26 @@
+{
+  "name": "esbuild-plugin-rewrite",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/plugin.js",
+  "types": "dist/plugin.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "tsc"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "author": "Cristiano Belloni <cristiano@hya.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.17.19",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "esbuild": "^0.14.x || ^0.15.0 || ^0.16.0 || ^0.17.0"
+  }
+}
