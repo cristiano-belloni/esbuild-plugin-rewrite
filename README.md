@@ -45,5 +45,5 @@ console.log(`Serving on http://${host}:${port}`);
 
 - `rewrite` -> rewrite the argument of the `import`, `@import` or `require` statement found in the code
 - `replace` -> replace the whole statement with the given content
-- `ignore` -> leave it in the code; the dependency is bundled
-- `remove` -> remove the statement from the code and leave a placeholder comment
+- `ignore` -> leave the statement untouched; if esbuild isn't configured otherwise, the dependency is bundled
+- `remove` -> remove the statement from the code and leave a placeholder comment (which might be optimized out by the compiler)
